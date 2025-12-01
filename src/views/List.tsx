@@ -36,16 +36,39 @@ const List = () => {
   return (
     <Section title={"Available cars"}>
       <div className={"flex gap-6 flex-col"}>
-        <div className={"flex justify-between w-full"}>
-          <Search value={searchQuery} onChange={handleSearchQueryChange} />
-          <NavigateTo to={views.Create.path} icon={<Plus />}>
-            Add new one
-          </NavigateTo>
-        </div>
+        {isLoading && (
+          <p className={"p-2 rounded-md bg-indigo-700/10 text-indigo-800"}>
+            Loading cars, please wait...
+          </p>
+        )}
+        {isError && (
+          <p>
+            Error loading cars:{" "}
+            <span className={"rounded-md p-2 text-red-600 bg-red-500/10 p-2"}>
+              {String(error)}. Check if backend is running.
+            </span>
+          </p>
+        )}
 
-        {isLoading && <p>Loading cars, please wait...</p>}
-        {isError && <p>Error loading cars: {String(error)}</p>}
-        {data && <CarsTable carsCollection={filteredCars} />}
+        {data && (
+          <>
+            <div
+              className={
+                "flex justify-between w-full gap-2 md:flex-row flex-col"
+              }
+            >
+              <Search
+                value={searchQuery}
+                onChange={handleSearchQueryChange}
+                className={"md:w-fit w-full"}
+              />
+              <NavigateTo to={views.Create.path} icon={<Plus />}>
+                Add new one
+              </NavigateTo>
+            </div>
+            <CarsTable carsCollection={filteredCars} />
+          </>
+        )}
       </div>
     </Section>
   );

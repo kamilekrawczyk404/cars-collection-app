@@ -16,8 +16,8 @@ export const useCarsList = () => {
 
 export const useCar = (id: string) => {
   return useQuery({
+    queryFn: () => getCar(id),
     queryKey: carKeys.detail(id),
-    queryFn: () => getCar,
     enabled: !!id,
   });
 };

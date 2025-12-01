@@ -1,12 +1,10 @@
 import React, { ComponentProps } from "react";
 import { SearchIcon } from "lucide-react";
 
-const Search = ({ value, onChange }: ComponentProps<"input">) => {
+const Search = ({ value, onChange, className }: ComponentProps<"input">) => {
   return (
     <div
-      className={
-        "relative border-[1px] rounded-lg border-gray-300 flex items-center px-2 w-fit gap-2 shadow-sm h-10"
-      }
+      className={`relative border-[1px] rounded-md border-gray-300 flex items-center px-2 w-fit gap-2 shadow-sm h-10 ${className}`}
     >
       <SearchIcon className={"text-gray-500"} size={"1.25rem"} />
       <input

@@ -13,7 +13,7 @@ const NavigateTo = ({
   return (
     <Link
       to={to}
-      className={`tracking-tight bg-accent text-gray-100 font-[500] inline-flex items-center px-4 rounded-xl h-10 group ${className}`}
+      className={`justify-center tracking-tight bg-accent text-gray-100 font-[500] inline-flex items-center px-4 rounded-md h-10 group ${className}`}
     >
       {!!icon && (
         <motion.span

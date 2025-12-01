@@ -8,16 +8,21 @@ import Delete from "./views/Delete";
 import { Car } from "lucide-react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
+import { ModalProvider } from "./context/modals/Modal";
 
 type View = "Home" | "Update" | "Create";
 type Views = {
-  [V in View]: { path: string; element: React.ReactElement };
+  [V in View]: {
+    path: string;
+    element: React.ReactElement;
+    showInHeader: boolean;
+  };
 };
 
 export const views: Views = {
-  Home: { path: "/", element: <List /> },
-  Update: { path: "/update", element: <Update /> },
-  Create: { path: "/create", element: <Create /> },
+  Home: { path: "/", element: <List />, showInHeader: true },
+  Create: { path: "/create", element: <Create />, showInHeader: true },
+  Update: { path: "/update/:carId", element: <Update />, showInHeader: false },
 };
 
 function App() {
@@ -43,23 +48,33 @@ function App() {
               <Car size={"1.75rem"} />
               <span className={"md:inline hidden"}>Cars collection</span>
             </h3>
-            <div className={"flex gap-4 items-end"}>
-              {Object.entries(views).map(([name, view], index) => (
-                <Link to={view.path} key={index} className={"text-neutral-200"}>
-                  {name}
-                </Link>
-              ))}
+            <div className={"flex lg:gap-8 md:gap-6 gap-4 items-end"}>
+              {Object.entries(views).map(
+                ([name, view], index) =>
+                  view.showInHeader && (
+                    <Link
+                      to={view.path}
+                      key={index}
+                      className={"text-neutral-200"}
+                    >
+                      {name}
+                    </Link>
+                  ),
+              )}
             </div>
           </div>
         </nav>
       </div>
+
       <QueryClientProvider client={queryClient}>
-        <Routes>
-          {Object.entries(views).map(([_, view], index) => (
-            <Route key={index} path={view.path} element={view.element} />
-          ))}
-        </Routes>
-        <Toaster position={"bottom-right"} reverseOrder={false} />
+        <ModalProvider>
+          <Routes>
+            {Object.entries(views).map(([_, view], index) => (
+              <Route key={index} path={view.path} element={view.element} />
+            ))}
+          </Routes>
+          <Toaster position={"bottom-right"} reverseOrder={false} />
+        </ModalProvider>
       </QueryClientProvider>
     </BrowserRouter>
   );

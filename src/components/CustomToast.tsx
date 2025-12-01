@@ -25,21 +25,21 @@ const CustomToast = ({
     case "success":
       icon = <BadgeCheck className={"text-green-700"} />;
       styles = {
-        iconBackground: "bg-green-200",
+        iconBackground: "bg-green-800/10",
         title: "text-green-800",
       };
       break;
     case "error":
       icon = <BadgeX className={"text-red-700"} />;
       styles = {
-        iconBackground: "bg-red-200",
+        iconBackground: "bg-red-800/10",
         title: "text-red-800",
       };
       break;
     case "info":
-      icon = <BadgeInfo className={"text-indigo-500"} />;
+      icon = <BadgeInfo className={"text-indigo-700"} />;
       styles = {
-        iconBackground: "bg-indigo-200",
+        iconBackground: "bg-indigo-800/10",
         title: "text-indigo-800",
       };
       break;

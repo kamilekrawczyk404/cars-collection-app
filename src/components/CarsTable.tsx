@@ -2,6 +2,8 @@ import React, { ComponentProps, useCallback, useMemo } from "react";
 import { BodyType, Car, FuelType } from "../features/cars/types";
 import { Edit, Edit2, Edit3, SquarePen, Trash2 } from "lucide-react";
 import { Link, LinkProps } from "react-router-dom";
+import { useModal } from "../context/modals/Modal";
+import { useDeleteCar } from "../features/cars/queries";
 
 type CarsTableProps = {
   carsCollection: Car[];
@@ -199,7 +201,7 @@ const ActionButton = ({ children, onClick }: ComponentProps<"button">) => {
     <button
       onClick={onClick}
       className={
-        "text-gray-500 hover:bg-gray-100 p-1 rounded-lg border-[1px] border-transparent hover:border-gray-200 transition"
+        "text-gray-500 hover:bg-gray-100 p-1 rounded-md border-[1px] border-transparent hover:border-gray-200 transition"
       }
       type={"button"}
     >
@@ -213,7 +215,7 @@ const LinkButton = ({ to, children }: LinkProps) => {
     <Link
       to={to}
       className={
-        "text-gray-500 hover:bg-gray-100 p-1 rounded-lg border-[1px] border-transparent hover:border-gray-200 transition"
+        "text-gray-500 hover:bg-gray-100 p-1 rounded-md border-[1px] border-transparent hover:border-gray-200 transition"
       }
     >
       {children}
@@ -221,12 +223,26 @@ const LinkButton = ({ to, children }: LinkProps) => {
   );
 };
 const CarActions = ({ car }: { car: Car }) => {
+  const { openModal } = useModal();
+
+  const deleteCarMutation = useDeleteCar();
+
+  const openDeleteCarModal = () => {
+    openModal({
+      title: "Are you sure to delete this car?",
+      description: "Once you delete it, you won't be able to undo changes",
+      processButtonText: "Delete",
+      type: "warning",
+      onProcess: async () => await deleteCarMutation.mutateAsync(car.id),
+    });
+  };
+
   return (
     <div className={"inline-flex"}>
-      <LinkButton to={`/update?id=${car.id}`}>
+      <LinkButton to={`/update/${car.id}`}>
         <SquarePen size={"1.25rem"} />
       </LinkButton>
-      <ActionButton>
+      <ActionButton onClick={() => openDeleteCarModal()}>
         <Trash2 size={"1.25rem"} />
       </ActionButton>
     </div>
