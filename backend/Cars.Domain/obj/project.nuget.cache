@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fp1BpAMySDNjTZWZPVjKOjQSsTjyBMgvXtpzjILvFGr8oRV5/2ZMaLV43+2OMAWKnMaTBKUvezbw9zNP8S3hcA==",
+  "dgSpecHash": "WCkTjo83hVGmoXffnmRdp9a2aCCB3SMW8FuHLHwAdH8QIHR52YAPHE1FZ6Ss1K6Q6mCnC3CMDuuruXR/IprjeQ==",
   "success": true,
-  "projectFilePath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj",
+  "projectFilePath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/Cars.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

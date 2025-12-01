@@ -1412,11 +1412,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj",
+      "projectUniqueName": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Application/Cars.Application.csproj",
       "projectName": "Cars.Application",
-      "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj",
+      "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Application/Cars.Application.csproj",
       "packagesPath": "/Users/kamilek/.nuget/packages/",
-      "outputPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/obj/",
+      "outputPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kamilek/.nuget/NuGet/NuGet.Config"
@@ -1432,11 +1432,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj": {
-              "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj"
+            "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/Cars.Domain.csproj": {
+              "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/Cars.Domain.csproj"
             },
-            "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj": {
-              "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj"
+            "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Infrastructure/Cars.Infrastructure.csproj": {
+              "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Infrastructure/Cars.Infrastructure.csproj"
             }
           }
         }

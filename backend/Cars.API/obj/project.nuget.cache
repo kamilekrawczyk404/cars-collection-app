@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nIe94BsXc4LMci0vgQwbzb5277x3TSl6HuuYBm+yHZB/Px49uAxJbYeIGhTKzacTVhnxdy6ESfvkHLitupoW9A==",
+  "dgSpecHash": "pDOUTBCdYte97tpgdcfHWWgh0LRWWa/99AHq/Paa9VD+ILjt/P4YhahWjEA7SWlO8WgQi+JPURAlvclBXVlsIw==",
   "success": true,
-  "projectFilePath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.API/Cars.API.csproj",
+  "projectFilePath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/Cars.API.csproj",
   "expectedPackageFiles": [
     "/Users/kamilek/.nuget/packages/fluentvalidation/11.11.0/fluentvalidation.11.11.0.nupkg.sha512",
     "/Users/kamilek/.nuget/packages/fluentvalidation.aspnetcore/11.3.1/fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",

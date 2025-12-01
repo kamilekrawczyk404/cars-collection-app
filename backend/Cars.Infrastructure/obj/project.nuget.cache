@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UWIfM9btVEf3m5RvRtMH8oO9t8KqieeOPtVCi1OCvnjNdttqdXeeTmcTVrD85DBS2WK+viehrGs/DaMo44dUCw==",
+  "dgSpecHash": "EIo/zww9pVDmTAFAt1MEPzYbBcxvVRI14TfMLA49RbkP0m9pn1IMGvEUHNZjRC3TcGQgKbbXORz5zSBE/ImitA==",
   "success": true,
-  "projectFilePath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj",
+  "projectFilePath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Infrastructure/Cars.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/kamilek/.nuget/packages/microsoft.data.sqlite.core/8.0.21/microsoft.data.sqlite.core.8.0.21.nupkg.sha512",
     "/Users/kamilek/.nuget/packages/microsoft.entityframeworkcore/8.0.21/microsoft.entityframeworkcore.8.0.21.nupkg.sha512",

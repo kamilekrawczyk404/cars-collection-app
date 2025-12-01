@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kamilek/RiderProjects/WebApplication1/Cars.API/Cars.API.csproj": {}
+    "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/Cars.API.csproj": {}
   },
   "projects": {
-    "/Users/kamilek/RiderProjects/WebApplication1/Cars.API/Cars.API.csproj": {
+    "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/Cars.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kamilek/RiderProjects/WebApplication1/Cars.API/Cars.API.csproj",
+        "projectUniqueName": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/Cars.API.csproj",
         "projectName": "Cars.API",
-        "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.API/Cars.API.csproj",
+        "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/Cars.API.csproj",
         "packagesPath": "/Users/kamilek/.nuget/packages/",
-        "outputPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.API/obj/",
+        "outputPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kamilek/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj": {
-                "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj"
+              "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Application/Cars.Application.csproj": {
+                "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Application/Cars.Application.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj": {
+    "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Application/Cars.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj",
+        "projectUniqueName": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Application/Cars.Application.csproj",
         "projectName": "Cars.Application",
-        "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj",
+        "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Application/Cars.Application.csproj",
         "packagesPath": "/Users/kamilek/.nuget/packages/",
-        "outputPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/obj/",
+        "outputPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kamilek/.nuget/NuGet/NuGet.Config"
@@ -112,11 +112,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj": {
-                "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj"
+              "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/Cars.Domain.csproj": {
+                "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/Cars.Domain.csproj"
               },
-              "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj": {
-                "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj"
+              "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Infrastructure/Cars.Infrastructure.csproj": {
+                "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Infrastructure/Cars.Infrastructure.csproj"
               }
             }
           }
@@ -160,14 +160,14 @@
         }
       }
     },
-    "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj": {
+    "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/Cars.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj",
+        "projectUniqueName": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/Cars.Domain.csproj",
         "projectName": "Cars.Domain",
-        "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj",
+        "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/Cars.Domain.csproj",
         "packagesPath": "/Users/kamilek/.nuget/packages/",
-        "outputPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/",
+        "outputPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kamilek/.nuget/NuGet/NuGet.Config"
@@ -214,14 +214,14 @@
         }
       }
     },
-    "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj": {
+    "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Infrastructure/Cars.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj",
+        "projectUniqueName": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Infrastructure/Cars.Infrastructure.csproj",
         "projectName": "Cars.Infrastructure",
-        "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj",
+        "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Infrastructure/Cars.Infrastructure.csproj",
         "packagesPath": "/Users/kamilek/.nuget/packages/",
-        "outputPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/obj/",
+        "outputPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kamilek/.nuget/NuGet/NuGet.Config"
@@ -237,8 +237,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj": {
-                "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj"
+              "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/Cars.Domain.csproj": {
+                "projectPath": "/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/Cars.Domain.csproj"
               }
             }
           }
