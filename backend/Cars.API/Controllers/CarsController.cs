@@ -1,12 +1,11 @@
 using Cars.Domain;
-using Cars.Infrastructure;
 using CarsWebApplication.Cars;
-using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace Cars.Application;
 
+[AllowAnonymous]
 public class CarsController : BaseApiController
 {
     [HttpGet]

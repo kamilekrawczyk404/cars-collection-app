@@ -14,28 +14,28 @@ public class Seed
             {
                 new AppUser
                 {
-                    DisplayedName = "Marek",
+                    DisplayName = "Marek",
                     UserName = "marek",
                     Bio = "Marek od prania firanek",
                     Email = "marek@gmail.com",
                 },
                 new AppUser
                 {
-                    DisplayedName = "Asia",
+                    DisplayName = "Asia",
                     UserName = "asia",
                     Bio = "Nie lubię jeść warzyw",
                     Email = "asia@gmail.com",
                 },
                 new AppUser
                 {
-                    DisplayedName = "Zbigniew",
+                    DisplayName = "Zbigniew",
                     UserName = "zbigniew",
                     Bio = "Kierownik wydziału obsługi klienta",
                     Email = "zbigniew@gmail.com",
                 },
                 new AppUser
                 {
-                    DisplayedName = "Aleksandra",
+                    DisplayName = "Aleksandra",
                     UserName = "olaola",
                     Bio = "Sprzedaje jabłka i maliny",
                     Email = "olaola@gmail.com",
