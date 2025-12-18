@@ -22,3 +22,4 @@
 /Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/obj/Debug/net8.0/refint/Cars.Domain.dll
 /Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/obj/Debug/net8.0/Cars.Domain.pdb
 /Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/obj/Debug/net8.0/ref/Cars.Domain.dll
+/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.Domain/obj/Debug/net8.0/Cars.Domain.csproj.AssemblyReference.cache

@@ -1,8 +1,11 @@
 using Cars.Application;
+using Cars.Domain;
 using Cars.Infrastructure;
 using CarsWebApplication.Cars;
+using CarsWebApplication.Services;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -41,6 +44,8 @@ builder.Services.AddCors(opt =>
     )
 );
 
+builder.Services.AddIdentityServices(builder.Configuration);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -60,8 +65,15 @@ var services = scope.ServiceProvider;
 try
 {
     var context = services.GetRequiredService<DataContext>();
-    context.Database.Migrate();
-    await Seed.SeedData(context);
+
+    // Creating the user manager
+    var userManager = services.GetRequiredService<UserManager<AppUser>>();
+
+    // Initializing all migrations
+    await context.Database.MigrateAsync();
+
+    // Seeding the database with proper parameters
+    await Seed.SeedData(context, userManager);
 }
 catch (Exception ex)
 {

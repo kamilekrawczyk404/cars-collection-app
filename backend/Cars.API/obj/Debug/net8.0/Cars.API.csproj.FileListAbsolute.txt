@@ -326,3 +326,8 @@
 /Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/obj/Debug/net8.0/Cars.API.pdb
 /Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/obj/Debug/net8.0/Cars.API.genruntimeconfig.cache
 /Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/obj/Debug/net8.0/ref/Cars.API.dll
+/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+/Users/kamilek/WebstormProjects/cars-frontend/backend/Cars.API/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll

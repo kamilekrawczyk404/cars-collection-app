@@ -1,12 +1,53 @@
 using Cars.Domain;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cars.Infrastructure;
 
 public class Seed
 {
-    public static async Task SeedData(DataContext context)
+    public static async Task SeedData(DataContext context, UserManager<AppUser> userManager)
     {
+        if (!userManager.Users.Any())
+        {
+            var users = new List<AppUser>
+            {
+                new AppUser
+                {
+                    DisplayedName = "Marek",
+                    UserName = "marek",
+                    Bio = "Marek od prania firanek",
+                    Email = "marek@gmail.com",
+                },
+                new AppUser
+                {
+                    DisplayedName = "Asia",
+                    UserName = "asia",
+                    Bio = "Nie lubię jeść warzyw",
+                    Email = "asia@gmail.com",
+                },
+                new AppUser
+                {
+                    DisplayedName = "Zbigniew",
+                    UserName = "zbigniew",
+                    Bio = "Kierownik wydziału obsługi klienta",
+                    Email = "zbigniew@gmail.com",
+                },
+                new AppUser
+                {
+                    DisplayedName = "Aleksandra",
+                    UserName = "olaola",
+                    Bio = "Sprzedaje jabłka i maliny",
+                    Email = "olaola@gmail.com",
+                },
+            };
+
+            foreach (var user in users)
+            {
+                await userManager.CreateAsync(user, "Hase!k0");
+            }
+        }
+
         if (await context.Cars.AnyAsync())
             return;
 
@@ -91,6 +132,7 @@ public class Seed
         };
 
         Console.WriteLine("Seeding the database...");
+
         foreach (var car in cars)
         {
             await context.Cars.AddAsync(car);
