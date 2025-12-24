@@ -10,6 +10,7 @@ import CustomInput from "./CustomInput";
 import CustomSelector from "./CustomSelector";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import SubmitButton from "./SubmitButton";
 
 type CarFormProps = {
   defaultValues?: Partial<CarFormValues>;
@@ -138,13 +139,7 @@ const CarForm = ({
           </div>
         </FormSection>
       </div>
-      <button
-        type={"submit"}
-        disabled={isSubmitting}
-        className={`bg-accent text-gray-100 px-4 h-10 transition-all rounded-md self-start disabled:bg-accent/50 md:w-fit w-full`}
-      >
-        {submittingText}
-      </button>
+      <SubmitButton disabled={isSubmitting}>{submittingText}</SubmitButton>
     </form>
   );
 };
