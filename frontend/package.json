@@ -22,7 +22,6 @@
     "react-hot-toast": "^2.6.0",
     "react-router-dom": "^7.9.6",
     "react-scripts": "5.0.1",
-    "tanstack-query": "^1.0.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
     "zod": "^3.25.76"
