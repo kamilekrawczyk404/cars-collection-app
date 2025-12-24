@@ -15,7 +15,11 @@ export const userRegisterSchema = z.object({
     .nonempty("Username is required")
     .min(2, "Username must be at least 2 characters")
     .max(30, "Username cannot exceed 30 characters")
-    .refine((s) => !s.includes(" "), "Username cannot contain spaces"),
+    .refine((s) => !s.includes(" "), "Username cannot contain spaces")
+    .refine(
+      (s) => /^[a-zA-Z0-9_]+$/.test(s),
+      "Username can only contain letters, numbers, and underscores",
+    ),
   bio: z.string().max(160, "Bio cannot exceed 160 characters").optional(),
   password: z
     .string()
