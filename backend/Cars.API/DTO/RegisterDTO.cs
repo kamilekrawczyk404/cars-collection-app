@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.InteropServices;
 
 namespace CarsWebApplication.DTO;
 
@@ -19,5 +18,6 @@ public class RegisterDTO
     [Required]
     public string UserName { get; set; }
 
-    public string? Bio { get; set; }
+    [Required]
+    public string Bio { get; set; }
 }
