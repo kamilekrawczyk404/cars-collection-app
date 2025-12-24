@@ -3,6 +3,7 @@ import React, { ComponentProps, Ref } from "react";
 type CustomInputProps = ComponentProps<"input"> & {
   label: string;
   errorMessage?: string;
+  hasError?: boolean;
   ref?: Ref<HTMLInputElement>;
 };
 
@@ -10,6 +11,7 @@ const CustomInput = ({
   ref,
   label,
   errorMessage,
+  hasError,
   className,
   type = "text",
   ...props
@@ -24,7 +26,7 @@ const CustomInput = ({
         type={type}
         id={props.name}
         className={`focus:outline-none h-10 px-3 rounded-md border ${
-          errorMessage ? "border-red-500" : "border-gray-300"
+          errorMessage || hasError ? "border-red-500" : "border-gray-300"
         }`}
         {...props}
       />

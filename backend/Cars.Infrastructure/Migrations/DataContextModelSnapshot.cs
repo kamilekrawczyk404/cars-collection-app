@@ -26,7 +26,6 @@ namespace Cars.Infrastructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Bio")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ConcurrencyStamp")
